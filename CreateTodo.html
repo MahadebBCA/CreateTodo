@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Todo list </title>
+    <link rel="stylesheet" href="Todo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <header class="todo-header">
+                <h1>My Todo List</h1>
+                <p class="subtitle">Stay organized and productive</p>
+            </header>
+
+            <div class="todo-input-container">
+                <input type="text" id="todoInput" class="todo-input" placeholder="Add your new task..."
+                    autocomplete="on">
+                <button id="addTodoBtn" class="add-btn" onclick="addTask()">Add</button>
+            </div>
+
+            <div class="filtercontainer">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="todoList" class="todo-list">
+                <!-- Todo items will be dynamically added here -->
+                <!-- <li class="todo-item">
+                    <input type="checkbox" class="todo-checkbox">
+                    <span class="todo-text">Complete project documentation</span>
+                    <button class="delete-btn">×</button>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox" class="todo-checkbox">
+                    <span class="todo-text"> javascript documentation</span>
+                    <button class="delete-btn">×</button>
+                </li> -->
+
+            </ul>
+
+            <div class="todo-footer">
+                <span id="itemsLeft" class="items-left"><span id="remaining-count">0</span> items left</span>
+                <button id="clearCompletedBtn" class="clear-completed">Clear Completed</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Todo.js"></script>
+</body>
+
+</html>
